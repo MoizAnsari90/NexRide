@@ -4,7 +4,6 @@ export const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
 let scriptLoadPromise = null
 
-let scriptLoadPromise = null
 
 export const loadGoogleMapsScript = () => {
   if (scriptLoadPromise) return scriptLoadPromise
