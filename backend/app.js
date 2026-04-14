@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin: "https://nex-ride-two.vercel.app/",
     credentials: true
 }));
 app.use(cookieparser());
