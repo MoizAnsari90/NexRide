@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-import dotenv from 'dotenv'
-dotenv.config()
+export const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
-export const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+let scriptLoadPromise = null
 
 let scriptLoadPromise = null
 
